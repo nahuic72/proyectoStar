@@ -4,7 +4,7 @@ from flask import Flask, Response
 import optparse
 
 application = Flask(__name__)
-
+# voy a añadir este comentario para no dañar el código
 @application.route('/', methods=['GET'])
 def get():
     return Response(json.dumps({'Output': 'Hello World'}), mimetype='application/json', status=200)
